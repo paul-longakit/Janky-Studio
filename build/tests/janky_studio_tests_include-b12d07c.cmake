@@ -1,0 +1,5 @@
+if(EXISTS "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests_tests-b12d07c.cmake")
+  include("/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests_tests-b12d07c.cmake")
+else()
+  add_test(janky_studio_tests_NOT_BUILT-b12d07c janky_studio_tests_NOT_BUILT-b12d07c)
+endif()

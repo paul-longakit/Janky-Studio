@@ -1,0 +1,583 @@
+Start testing: Aug 29 19:27 PST
+----------------------------------------------------------
+1/29 Testing: State machine starts in its initial state
+1/29 Test: State machine starts in its initial state
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "State machine starts in its initial state"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"State machine starts in its initial state" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "State machine starts in its initial state"
+Randomness seeded to: 1473547560
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"State machine starts in its initial state" end time: Aug 29 19:27 PST
+"State machine starts in its initial state" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/29 Testing: State machine transitions when condition matches
+2/29 Test: State machine transitions when condition matches
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "State machine transitions when condition matches"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"State machine transitions when condition matches" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "State machine transitions when condition matches"
+Randomness seeded to: 3118278905
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"State machine transitions when condition matches" end time: Aug 29 19:27 PST
+"State machine transitions when condition matches" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/29 Testing: State machine ignores unknown condition
+3/29 Test: State machine ignores unknown condition
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "State machine ignores unknown condition"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"State machine ignores unknown condition" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "State machine ignores unknown condition"
+Randomness seeded to: 3106332943
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"State machine ignores unknown condition" end time: Aug 29 19:27 PST
+"State machine ignores unknown condition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/29 Testing: State machine advances time in current state
+4/29 Test: State machine advances time in current state
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "State machine advances time in current state"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"State machine advances time in current state" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "State machine advances time in current state"
+Randomness seeded to: 2643940300
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"State machine advances time in current state" end time: Aug 29 19:27 PST
+"State machine advances time in current state" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/29 Testing: State transition resets state time
+5/29 Test: State transition resets state time
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "State transition resets state time"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"State transition resets state time" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "State transition resets state time"
+Randomness seeded to: 1227499870
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"State transition resets state time" end time: Aug 29 19:27 PST
+"State transition resets state time" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/29 Testing: Valid creature is ready for simulation
+6/29 Test: Valid creature is ready for simulation
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Valid creature is ready for simulation"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Valid creature is ready for simulation" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Valid creature is ready for simulation"
+Randomness seeded to: 2314609197
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Valid creature is ready for simulation" end time: Aug 29 19:27 PST
+"Valid creature is ready for simulation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/29 Testing: Creature without states is not ready for simulation
+7/29 Test: Creature without states is not ready for simulation
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Creature without states is not ready for simulation"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Creature without states is not ready for simulation" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Creature without states is not ready for simulation"
+Randomness seeded to: 763390819
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Creature without states is not ready for simulation" end time: Aug 29 19:27 PST
+"Creature without states is not ready for simulation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/29 Testing: Creature with invalid initial state is not ready
+8/29 Test: Creature with invalid initial state is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Creature with invalid initial state is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Creature with invalid initial state is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Creature with invalid initial state is not ready"
+Randomness seeded to: 1864201260
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Creature with invalid initial state is not ready" end time: Aug 29 19:27 PST
+"Creature with invalid initial state is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/29 Testing: Creature without Idle state is not ready
+9/29 Test: Creature without Idle state is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Creature without Idle state is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Creature without Idle state is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Creature without Idle state is not ready"
+Randomness seeded to: 2719248439
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Creature without Idle state is not ready" end time: Aug 29 19:27 PST
+"Creature without Idle state is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/29 Testing: State with missing animation is not ready
+10/29 Test: State with missing animation is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "State with missing animation is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"State with missing animation is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "State with missing animation is not ready"
+Randomness seeded to: 3385334044
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"State with missing animation is not ready" end time: Aug 29 19:27 PST
+"State with missing animation is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/29 Testing: Transition to missing state is not ready
+11/29 Test: Transition to missing state is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Transition to missing state is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Transition to missing state is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Transition to missing state is not ready"
+Randomness seeded to: 1562424765
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Transition to missing state is not ready" end time: Aug 29 19:27 PST
+"Transition to missing state is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/29 Testing: Animation without frames is not ready
+12/29 Test: Animation without frames is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Animation without frames is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Animation without frames is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Animation without frames is not ready"
+Randomness seeded to: 3933109332
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Animation without frames is not ready" end time: Aug 29 19:27 PST
+"Animation without frames is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/29 Testing: Animation frame without image data is not ready
+13/29 Test: Animation frame without image data is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Animation frame without image data is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Animation frame without image data is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Animation frame without image data is not ready"
+Randomness seeded to: 3657748007
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Animation frame without image data is not ready" end time: Aug 29 19:27 PST
+"Animation frame without image data is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/29 Testing: Animation frame with invalid duration is not ready
+14/29 Test: Animation frame with invalid duration is not ready
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Animation frame with invalid duration is not ready"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Animation frame with invalid duration is not ready" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Animation frame with invalid duration is not ready"
+Randomness seeded to: 477116465
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Animation frame with invalid duration is not ready" end time: Aug 29 19:27 PST
+"Animation frame with invalid duration is not ready" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/29 Testing: Paint document stores its dimensions
+15/29 Test: Paint document stores its dimensions
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint document stores its dimensions"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint document stores its dimensions" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint document stores its dimensions"
+Randomness seeded to: 980538845
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint document stores its dimensions" end time: Aug 29 19:27 PST
+"Paint document stores its dimensions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/29 Testing: Paint document can add a layer
+16/29 Test: Paint document can add a layer
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint document can add a layer"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint document can add a layer" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint document can add a layer"
+Randomness seeded to: 1124391851
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint document can add a layer" end time: Aug 29 19:27 PST
+"Paint document can add a layer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/29 Testing: Paint layer stores pixels
+17/29 Test: Paint layer stores pixels
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint layer stores pixels"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint layer stores pixels" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint layer stores pixels"
+Randomness seeded to: 1505007505
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint layer stores pixels" end time: Aug 29 19:27 PST
+"Paint layer stores pixels" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/29 Testing: Paint layer rejects invalid pixel coordinates
+18/29 Test: Paint layer rejects invalid pixel coordinates
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint layer rejects invalid pixel coordinates"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint layer rejects invalid pixel coordinates" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint layer rejects invalid pixel coordinates"
+Randomness seeded to: 1981752456
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint layer rejects invalid pixel coordinates" end time: Aug 29 19:27 PST
+"Paint layer rejects invalid pixel coordinates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/29 Testing: Paint document can remove a layer
+19/29 Test: Paint document can remove a layer
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint document can remove a layer"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint document can remove a layer" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint document can remove a layer"
+Randomness seeded to: 3846546328
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint document can remove a layer" end time: Aug 29 19:27 PST
+"Paint document can remove a layer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/29 Testing: Paint document can add a frame
+20/29 Test: Paint document can add a frame
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint document can add a frame"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint document can add a frame" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint document can add a frame"
+Randomness seeded to: 426999461
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint document can add a frame" end time: Aug 29 19:27 PST
+"Paint document can add a frame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/29 Testing: Paint document layers belong to the active frame
+21/29 Test: Paint document layers belong to the active frame
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint document layers belong to the active frame"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint document layers belong to the active frame" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint document layers belong to the active frame"
+Randomness seeded to: 1615841459
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint document layers belong to the active frame" end time: Aug 29 19:27 PST
+"Paint document layers belong to the active frame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/29 Testing: Paint document can switch active frame
+22/29 Test: Paint document can switch active frame
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint document can switch active frame"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint document can switch active frame" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint document can switch active frame"
+Randomness seeded to: 1255668913
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint document can switch active frame" end time: Aug 29 19:27 PST
+"Paint document can switch active frame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/29 Testing: Brush paints a pixel
+23/29 Test: Brush paints a pixel
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Brush paints a pixel"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Brush paints a pixel" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Brush paints a pixel"
+Randomness seeded to: 1139501231
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Brush paints a pixel" end time: Aug 29 19:27 PST
+"Brush paints a pixel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/29 Testing: Brush paints multiple pixels
+24/29 Test: Brush paints multiple pixels
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Brush paints multiple pixels"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Brush paints multiple pixels" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Brush paints multiple pixels"
+Randomness seeded to: 1607290283
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Brush paints multiple pixels" end time: Aug 29 19:27 PST
+"Brush paints multiple pixels" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/29 Testing: Brush does not paint outside layer
+25/29 Test: Brush does not paint outside layer
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Brush does not paint outside layer"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Brush does not paint outside layer" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Brush does not paint outside layer"
+Randomness seeded to: 2529741057
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Brush does not paint outside layer" end time: Aug 29 19:27 PST
+"Brush does not paint outside layer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/29 Testing: Zero size brush does nothing
+26/29 Test: Zero size brush does nothing
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Zero size brush does nothing"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Zero size brush does nothing" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Zero size brush does nothing"
+Randomness seeded to: 1370095021
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Zero size brush does nothing" end time: Aug 29 19:27 PST
+"Zero size brush does nothing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/29 Testing: Brush opacity blends with existing pixel
+27/29 Test: Brush opacity blends with existing pixel
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Brush opacity blends with existing pixel"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Brush opacity blends with existing pixel" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Brush opacity blends with existing pixel"
+Randomness seeded to: 509810398
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Brush opacity blends with existing pixel" end time: Aug 29 19:27 PST
+"Brush opacity blends with existing pixel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/29 Testing: Brush settings can be changed
+28/29 Test: Brush settings can be changed
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Brush settings can be changed"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Brush settings can be changed" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Brush settings can be changed"
+Randomness seeded to: 3242650795
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Brush settings can be changed" end time: Aug 29 19:27 PST
+"Brush settings can be changed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/29 Testing: Paint layer converts to animation frame
+29/29 Test: Paint layer converts to animation frame
+Command: "/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" "Paint layer converts to animation frame"
+Directory: /home/paulus/Desktop/Janky Studio/build/tests
+"Paint layer converts to animation frame" start time: Aug 29 19:27 PST
+Output:
+----------------------------------------------------------
+Filters: "Paint layer converts to animation frame"
+Randomness seeded to: 2723434958
+===============================================================================
+All tests passed (11 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Paint layer converts to animation frame" end time: Aug 29 19:27 PST
+"Paint layer converts to animation frame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 29 19:27 PST

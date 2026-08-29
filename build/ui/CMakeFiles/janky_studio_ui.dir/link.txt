@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjanky_studio_ui.a CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o CMakeFiles/janky_studio_ui.dir/src/main_menu_page.cpp.o CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o CMakeFiles/janky_studio_ui.dir/src/arena_editor_page.cpp.o CMakeFiles/janky_studio_ui.dir/src/simulation_page.cpp.o CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o
+/usr/bin/ranlib libjanky_studio_ui.a

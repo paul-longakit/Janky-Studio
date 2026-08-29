@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjanky_studio_domain.a CMakeFiles/janky_studio_domain.dir/src/creature_validator.cpp.o CMakeFiles/janky_studio_domain.dir/src/animation_frame.cpp.o CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o
+/usr/bin/ranlib libjanky_studio_domain.a

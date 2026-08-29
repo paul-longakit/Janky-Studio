@@ -1,0 +1,144 @@
+{
+	"BUILD_DIR" : "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen",
+	"CMAKE_BINARY_DIR" : "/home/paulus/Desktop/Janky Studio/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/paulus/Desktop/Janky Studio/build/ui",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/paulus/Desktop/Janky Studio/ui",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/home/paulus/Desktop/Janky Studio/ui/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/home/paulus/Desktop/Janky Studio",
+	"DEP_FILE" : "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "janky_studio_ui_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/arena_editor_page.hpp",
+			"Mu",
+			"WMZAPVKHHS/moc_arena_editor_page.cpp",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp",
+			"Mu",
+			"WMZAPVKHHS/moc_creature_editor_page.cpp",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/main_menu_page.hpp",
+			"Mu",
+			"WMZAPVKHHS/moc_main_menu_page.cpp",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/simulation_page.hpp",
+			"Mu",
+			"WMZAPVKHHS/moc_simulation_page.cpp",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/state_editor_page.hpp",
+			"Mu",
+			"WMZAPVKHHS/moc_state_editor_page.cpp",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/widgets/paint_canvas.hpp",
+			"Mu",
+			"7YIPF6C2YZ/moc_paint_canvas.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/paulus/Desktop/Janky Studio/ui/include",
+		"/home/paulus/Desktop/Janky Studio/domain/include",
+		"/home/paulus/Desktop/Janky Studio/core/include",
+		"/home/paulus/Desktop/Janky Studio/painting/include",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt6",
+		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=c++23",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/paulus/Desktop/Janky Studio/build/ui/CMakeFiles/janky_studio_ui_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 4,
+	"SETTINGS_FILE" : "/home/paulus/Desktop/Janky Studio/build/ui/CMakeFiles/janky_studio_ui_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/src/arena_editor_page.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/src/creature_editor_page.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/src/main_menu_page.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/src/paint_canvas.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/src/simulation_page.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/paulus/Desktop/Janky Studio/ui/src/state_editor_page.cpp",
+			"Mu",
+			null
+		]
+	],
+	"VERBOSITY" : 0
+}

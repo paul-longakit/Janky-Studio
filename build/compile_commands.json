@@ -1,0 +1,176 @@
+[
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/core",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_core.dir/src/vec2.cpp.o -c \"/home/paulus/Desktop/Janky Studio/core/src/vec2.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/core/src/vec2.cpp",
+  "output": "core/CMakeFiles/janky_studio_core.dir/src/vec2.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/core",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_core.dir/src/rect.cpp.o -c \"/home/paulus/Desktop/Janky Studio/core/src/rect.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/core/src/rect.cpp",
+  "output": "core/CMakeFiles/janky_studio_core.dir/src/rect.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/core",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_core.dir/src/color.cpp.o -c \"/home/paulus/Desktop/Janky Studio/core/src/color.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/core/src/color.cpp",
+  "output": "core/CMakeFiles/janky_studio_core.dir/src/color.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/core",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_core.dir/src/unique_id.cpp.o -c \"/home/paulus/Desktop/Janky Studio/core/src/unique_id.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/core/src/unique_id.cpp",
+  "output": "core/CMakeFiles/janky_studio_core.dir/src/unique_id.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/core",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_core.dir/src/result.cpp.o -c \"/home/paulus/Desktop/Janky Studio/core/src/result.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/core/src/result.cpp",
+  "output": "core/CMakeFiles/janky_studio_core.dir/src/result.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/domain",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_domain.dir/src/creature_validator.cpp.o -c \"/home/paulus/Desktop/Janky Studio/domain/src/creature_validator.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/domain/src/creature_validator.cpp",
+  "output": "domain/CMakeFiles/janky_studio_domain.dir/src/creature_validator.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/domain",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_domain.dir/src/animation_frame.cpp.o -c \"/home/paulus/Desktop/Janky Studio/domain/src/animation_frame.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/domain/src/animation_frame.cpp",
+  "output": "domain/CMakeFiles/janky_studio_domain.dir/src/animation_frame.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/domain",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o -c \"/home/paulus/Desktop/Janky Studio/domain/src/domain_models.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/domain/src/domain_models.cpp",
+  "output": "domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/statemachine",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_statemachine.dir/src/transition_evaluator.cpp.o -c \"/home/paulus/Desktop/Janky Studio/statemachine/src/transition_evaluator.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/statemachine/src/transition_evaluator.cpp",
+  "output": "statemachine/CMakeFiles/janky_studio_statemachine.dir/src/transition_evaluator.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/statemachine",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -std=c++23 -o CMakeFiles/janky_studio_statemachine.dir/src/state_machine_runner.cpp.o -c \"/home/paulus/Desktop/Janky Studio/statemachine/src/state_machine_runner.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/statemachine/src/state_machine_runner.cpp",
+  "output": "statemachine/CMakeFiles/janky_studio_statemachine.dir/src/state_machine_runner.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/painting",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -std=c++23 -o CMakeFiles/janky_studio_painting.dir/src/paint_layer.cpp.o -c \"/home/paulus/Desktop/Janky Studio/painting/src/paint_layer.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/painting/src/paint_layer.cpp",
+  "output": "painting/CMakeFiles/janky_studio_painting.dir/src/paint_layer.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/painting",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -std=c++23 -o CMakeFiles/janky_studio_painting.dir/src/paint_frame.cpp.o -c \"/home/paulus/Desktop/Janky Studio/painting/src/paint_frame.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/painting/src/paint_frame.cpp",
+  "output": "painting/CMakeFiles/janky_studio_painting.dir/src/paint_frame.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/painting",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -std=c++23 -o CMakeFiles/janky_studio_painting.dir/src/paint_document.cpp.o -c \"/home/paulus/Desktop/Janky Studio/painting/src/paint_document.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/painting/src/paint_document.cpp",
+  "output": "painting/CMakeFiles/janky_studio_painting.dir/src/paint_document.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/painting",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -std=c++23 -o CMakeFiles/janky_studio_painting.dir/src/brush.cpp.o -c \"/home/paulus/Desktop/Janky Studio/painting/src/brush.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/painting/src/brush.cpp",
+  "output": "painting/CMakeFiles/janky_studio_painting.dir/src/brush.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/painting",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -std=c++23 -o CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o -c \"/home/paulus/Desktop/Janky Studio/painting/src/animation_frame_converter.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/painting/src/animation_frame_converter.cpp",
+  "output": "painting/CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o -c \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/mocs_compilation.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/mocs_compilation.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/src/main_menu_page.cpp.o -c \"/home/paulus/Desktop/Janky Studio/ui/src/main_menu_page.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/ui/src/main_menu_page.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/src/main_menu_page.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o -c \"/home/paulus/Desktop/Janky Studio/ui/src/creature_editor_page.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/ui/src/creature_editor_page.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o -c \"/home/paulus/Desktop/Janky Studio/ui/src/state_editor_page.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/ui/src/state_editor_page.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/src/arena_editor_page.cpp.o -c \"/home/paulus/Desktop/Janky Studio/ui/src/arena_editor_page.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/ui/src/arena_editor_page.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/src/arena_editor_page.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/src/simulation_page.cpp.o -c \"/home/paulus/Desktop/Janky Studio/ui/src/simulation_page.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/ui/src/simulation_page.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/src/simulation_page.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o -c \"/home/paulus/Desktop/Janky Studio/ui/src/paint_canvas.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/ui/src/paint_canvas.cpp",
+  "output": "ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/app/creature_studio",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/app/creature_studio/include\" -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio.dir/src/main.cpp.o -c \"/home/paulus/Desktop/Janky Studio/app/creature_studio/src/main.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/app/creature_studio/src/main.cpp",
+  "output": "app/creature_studio/CMakeFiles/janky_studio.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/app/creature_studio",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/app/creature_studio/include\" -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio.dir/src/main_window.cpp.o -c \"/home/paulus/Desktop/Janky Studio/app/creature_studio/src/main_window.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/app/creature_studio/src/main_window.cpp",
+  "output": "app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/tests",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/statemachine/state_machine_runner_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/statemachine/state_machine_runner_tests.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/tests/statemachine/state_machine_runner_tests.cpp",
+  "output": "tests/CMakeFiles/janky_studio_tests.dir/statemachine/state_machine_runner_tests.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/tests",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/domain/creature_validator_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/domain/creature_validator_tests.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/tests/domain/creature_validator_tests.cpp",
+  "output": "tests/CMakeFiles/janky_studio_tests.dir/domain/creature_validator_tests.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/tests",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/painting/paint_document_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/painting/paint_document_tests.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/tests/painting/paint_document_tests.cpp",
+  "output": "tests/CMakeFiles/janky_studio_tests.dir/painting/paint_document_tests.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/tests",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/painting/brush_tests.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/tests/painting/brush_tests.cpp",
+  "output": "tests/CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/tests",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/painting/animation_frame_converter_tests.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/tests/painting/animation_frame_converter_tests.cpp",
+  "output": "tests/CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o"
+}
+]
