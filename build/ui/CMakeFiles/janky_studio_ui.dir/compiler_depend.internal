@@ -1272,6 +1272,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h
@@ -1305,6 +1307,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h
@@ -1393,27 +1396,45 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h

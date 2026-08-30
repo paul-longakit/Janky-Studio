@@ -1,8 +1,9 @@
 #include <creature_studio/ui/pages/creature_editor_page.hpp>
 
 #include <algorithm>
-#include <cstdint>
 #include <cstddef>
+#include <cstdint>
+#include <string>
 #include <utility>
 
 #include <creature_studio/painting/animation_frame_converter.hpp>
@@ -11,11 +12,15 @@
 #include <QCheckBox>
 #include <QDoubleSpinBox>
 #include <QFormLayout>
+#include <QFrame>
+#include <QGroupBox>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QLineEdit>
 #include <QListWidget>
 #include <QPushButton>
+#include <QSplitter>
+#include <QToolButton>
 #include <QVBoxLayout>
 #include <QSignalBlocker>
 
@@ -36,15 +41,144 @@ CreatureEditorPage::CreatureEditorPage(
     , m_removeAnimationButton(new QPushButton("Remove Animation", this))
     , m_saveFrameButton(new QPushButton("Save Frame", this))
 {
-    auto* layout = new QVBoxLayout(this);
+    m_document.addLayer("Body");
 
-    auto* label = new QLabel("Creature Editor", this);
-    label->setAlignment(Qt::AlignCenter);
+    /*
+     * Main workspace
+     *
+     * ┌──────────────┬──────────────────────────┬──────────────┐
+     * │ Tools        │                          │ Animation    │
+     * │              │          Canvas         │              │
+     * ├──────────────┴──────────────────────────┴──────────────┤
+     * │ Layers                                                   │
+     * ├─────────────────────────────────────────────────────────┤
+     * │ Timeline                                                 │
+     * ├─────────────────────────────────────────────────────────┤
+     * │ Navigation                                                │
+     * └─────────────────────────────────────────────────────────┘
+     */
 
-    m_fpsSpinBox->setRange(0.1, 240.0);
-    m_fpsSpinBox->setSingleStep(1.0);
+    auto* rootLayout = new QVBoxLayout(this);
+    rootLayout->setContentsMargins(8, 8, 8, 8);
+    rootLayout->setSpacing(6);
 
-    auto* animationForm = new QFormLayout();
+    // ---------------------------------------------------------
+    // Header
+    // ---------------------------------------------------------
+
+    auto* headerLayout = new QHBoxLayout();
+
+    auto* titleLabel =
+        new QLabel("Creature Editor", this);
+
+    QFont titleFont = titleLabel->font();
+    titleFont.setPointSize(titleFont.pointSize() + 2);
+    titleFont.setBold(true);
+    titleLabel->setFont(titleFont);
+
+    auto* stateEditorButton =
+        new QPushButton("State Editor", this);
+
+    headerLayout->addWidget(titleLabel);
+    headerLayout->addStretch();
+    headerLayout->addWidget(stateEditorButton);
+
+    rootLayout->addLayout(headerLayout);
+
+    // ---------------------------------------------------------
+    // Main editor workspace
+    // ---------------------------------------------------------
+
+    auto* workspaceSplitter =
+        new QSplitter(Qt::Horizontal, this);
+
+    // ---------------------------------------------------------
+    // Left: Tools
+    // ---------------------------------------------------------
+
+    auto* toolsPanel =
+        new QGroupBox("Tools", this);
+
+    auto* toolsLayout =
+        new QVBoxLayout(toolsPanel);
+
+    auto* pencilButton =
+        new QToolButton(toolsPanel);
+
+    pencilButton->setText("Pencil");
+    pencilButton->setToolTip("Pencil");
+
+    auto* brushButton =
+        new QToolButton(toolsPanel);
+
+    brushButton->setText("Brush");
+    brushButton->setToolTip("Brush");
+
+    auto* eraserButton =
+        new QToolButton(toolsPanel);
+
+    eraserButton->setText("Eraser");
+    eraserButton->setToolTip("Eraser");
+
+    toolsLayout->addWidget(pencilButton);
+    toolsLayout->addWidget(brushButton);
+    toolsLayout->addWidget(eraserButton);
+    toolsLayout->addStretch();
+
+    workspaceSplitter->addWidget(toolsPanel);
+
+    // ---------------------------------------------------------
+    // Center: Canvas
+    // ---------------------------------------------------------
+
+    auto* canvasPanel =
+        new QFrame(this);
+
+    canvasPanel->setFrameShape(QFrame::StyledPanel);
+
+    auto* canvasLayout =
+        new QVBoxLayout(canvasPanel);
+
+    canvasLayout->setContentsMargins(4, 4, 4, 4);
+
+    auto* canvas =
+        new PaintCanvas(m_document, canvasPanel);
+
+    canvasLayout->addWidget(canvas, 1);
+
+    workspaceSplitter->addWidget(canvasPanel);
+
+    // ---------------------------------------------------------
+    // Right: Animation
+    // ---------------------------------------------------------
+
+    auto* animationPanel =
+        new QGroupBox("Animation", this);
+
+    auto* animationPanelLayout =
+        new QVBoxLayout(animationPanel);
+
+    animationPanelLayout->addWidget(
+        new QLabel("Animations", animationPanel));
+
+    animationPanelLayout->addWidget(
+        m_animationList,
+        1);
+
+    auto* animationButtonsLayout =
+        new QHBoxLayout();
+
+    animationButtonsLayout->addWidget(
+        m_addAnimationButton);
+
+    animationButtonsLayout->addWidget(
+        m_removeAnimationButton);
+
+    animationPanelLayout->addLayout(
+        animationButtonsLayout);
+
+    auto* animationForm =
+        new QFormLayout();
 
     animationForm->addRow(
         "Name:",
@@ -58,53 +192,100 @@ CreatureEditorPage::CreatureEditorPage(
         "",
         m_loopingCheckBox);
 
-    auto* animationListLayout = new QVBoxLayout();
+    animationPanelLayout->addLayout(
+        animationForm);
 
-    animationListLayout->addWidget(
-        new QLabel("Animations", this));
+    workspaceSplitter->addWidget(animationPanel);
 
-    animationListLayout->addWidget(
-        m_animationList);
+    workspaceSplitter->setStretchFactor(0, 0);
+    workspaceSplitter->setStretchFactor(1, 1);
+    workspaceSplitter->setStretchFactor(2, 0);
 
-    auto* animationButtonsLayout = new QHBoxLayout();
+    workspaceSplitter->setSizes({
+        120,
+        600,
+        240
+    });
 
-    animationButtonsLayout->addWidget(
-        m_addAnimationButton);
+    rootLayout->addWidget(
+        workspaceSplitter,
+        1);
 
-    animationButtonsLayout->addWidget(
-        m_removeAnimationButton);
+    // ---------------------------------------------------------
+    // Layers
+    // ---------------------------------------------------------
 
-    animationListLayout->addLayout(
-        animationButtonsLayout);
+    auto* layersPanel =
+        new QGroupBox("Layers", this);
 
-    auto* canvas = new PaintCanvas(m_document, this);
+    auto* layersLayout =
+        new QVBoxLayout(layersPanel);
 
-    m_document.addLayer("Body");
+    auto* layerList =
+        new QListWidget(layersPanel);
 
-    refreshAnimationList();
+    layerList->addItem("Body");
+    layerList->setCurrentRow(0);
 
-    auto* navigationLayout = new QHBoxLayout();
+    layersLayout->addWidget(layerList);
 
-    auto* stateEditorButton =
-        new QPushButton("State Editor", this);
+    rootLayout->addWidget(
+        layersPanel);
+
+    // ---------------------------------------------------------
+    // Timeline
+    // ---------------------------------------------------------
+
+    auto* timelinePanel =
+        new QGroupBox("Timeline", this);
+
+    auto* timelineLayout =
+        new QHBoxLayout(timelinePanel);
+
+    auto* frameLabel =
+        new QLabel("No frames", timelinePanel);
+
+    timelineLayout->addWidget(frameLabel);
+    timelineLayout->addStretch();
+
+    timelineLayout->addWidget(
+        m_saveFrameButton);
+
+    rootLayout->addWidget(
+        timelinePanel);
+
+    // ---------------------------------------------------------
+    // Navigation
+    // ---------------------------------------------------------
+
+    auto* navigationLayout =
+        new QHBoxLayout();
 
     auto* backButton =
-        new QPushButton("Back to Main Menu", this);
-
-    navigationLayout->addWidget(
-        stateEditorButton);
+        new QPushButton(
+            "Back to Main Menu",
+            this);
 
     navigationLayout->addWidget(
         backButton);
 
     navigationLayout->addStretch();
 
-    layout->addWidget(label);
-    layout->addLayout(animationListLayout);
-    layout->addLayout(animationForm);
-    layout->addWidget(m_saveFrameButton);
-    layout->addLayout(navigationLayout);
-    layout->addWidget(canvas, 1);
+    rootLayout->addLayout(
+        navigationLayout);
+
+    // ---------------------------------------------------------
+    // Initial state
+    // ---------------------------------------------------------
+
+    m_fpsSpinBox->setRange(0.1, 240.0);
+    m_fpsSpinBox->setSingleStep(1.0);
+
+    refreshAnimationList();
+
+    // ---------------------------------------------------------
+    // Existing behavior
+    // ---------------------------------------------------------
 
     connect(
         m_animationList,
@@ -159,7 +340,7 @@ CreatureEditorPage::CreatureEditorPage(
         {
             removeSelectedAnimation();
         });
-        
+
     connect(
         stateEditorButton,
         &QPushButton::clicked,
@@ -171,7 +352,7 @@ CreatureEditorPage::CreatureEditorPage(
         &QPushButton::clicked,
         this,
         &CreatureEditorPage::backRequested);
-    
+
     connect(
         m_saveFrameButton,
         &QPushButton::clicked,
