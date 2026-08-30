@@ -1271,6 +1271,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -1361,6 +1362,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
@@ -1404,6 +1406,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
@@ -2253,6 +2256,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o: /home/paulus/Desktop/J
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -2344,6 +2348,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o: /home/paulus/Desktop/J
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
@@ -3391,6 +3396,10 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h:
+
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
@@ -3500,6 +3509,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
 
 /usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QImage:
 
 /home/paulus/Desktop/Janky\ Studio/ui/src/main_menu_page.cpp:
 
@@ -3655,11 +3666,13 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/c++/13/bits/basic_ios.h:
 
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp:
-
 /usr/include/c++/13/pstl/execution_defs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/node_handle.h:
 
@@ -3821,8 +3834,6 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h:
-
 /usr/include/c++/13/bits/invoke.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
@@ -3866,8 +3877,6 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp:
 /usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/include/c++/13/bits/postypes.h:
-
-/usr/include/c++/13/bits/max_size_type.h:
 
 /usr/include/c++/13/debug/assertions.h:
 
@@ -4088,6 +4097,10 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider:
 
 /usr/include/c++/13/ios:
 
@@ -4395,6 +4408,10 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /home/paulus/Desktop/Janky\ Studio/ui/src/creature_editor_page.cpp:
 
+/usr/include/c++/13/bits/max_size_type.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h:
@@ -4480,9 +4497,3 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:

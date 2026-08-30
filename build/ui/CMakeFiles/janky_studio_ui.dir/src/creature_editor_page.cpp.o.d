@@ -401,6 +401,10 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: \
  /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/widgets/paint_canvas.hpp \
  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush.hpp \
  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush_settings.hpp \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
@@ -463,4 +467,6 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h

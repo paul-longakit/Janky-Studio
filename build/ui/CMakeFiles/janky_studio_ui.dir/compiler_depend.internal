@@ -1274,6 +1274,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
@@ -1364,6 +1365,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h
@@ -1407,6 +1409,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
@@ -2258,6 +2261,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
@@ -2349,6 +2353,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter
