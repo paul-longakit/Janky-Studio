@@ -9,7 +9,7 @@ namespace creature_studio::painting
 
 struct BrushSettings
 {
-    std::size_t size{1};
+    std::size_t size{5};
     Pixel color{255, 255, 255, 255};
     double opacity{1.0};
 };

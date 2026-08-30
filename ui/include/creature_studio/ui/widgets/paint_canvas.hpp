@@ -4,6 +4,8 @@
 #include <creature_studio/painting/paint_document.hpp>
 
 #include <QWidget>
+#include <QImage>
+#include <QPoint>
 
 namespace creature_studio
 {
@@ -25,6 +27,9 @@ public:
     void setTool(Tool tool);
     Tool tool() const;
 
+    void setBrushSize(std::size_t size);
+    std::size_t brushSize() const;
+
 protected:
     void paintEvent(QPaintEvent* event) override;
     void mousePressEvent(QMouseEvent* event) override;
@@ -32,6 +37,8 @@ protected:
     void mouseReleaseEvent(QMouseEvent* event) override;
 
 private:
+    void rebuildImage();
+    
     void paintAt(const QPoint& position);
 
     void paintPixel(
@@ -43,6 +50,10 @@ private:
     painting::Brush m_brush;
     Tool m_tool{Tool::Brush};
     bool m_drawing{false};
+    QPoint m_lastPaintPosition;
+
+    QImage m_image;
+    bool m_imageDirty{true};
 };
 
 } // namespace creature_studio

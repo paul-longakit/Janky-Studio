@@ -24,6 +24,7 @@
 #include <QVBoxLayout>
 #include <QSignalBlocker>
 #include <QButtonGroup>
+#include <QSlider>
 
 namespace creature_studio
 {
@@ -33,7 +34,7 @@ CreatureEditorPage::CreatureEditorPage(
     QWidget* parent)
     : QWidget(parent)
     , m_creature(creature)
-    , m_document(32, 32)
+    , m_document(1080, 1080)
     , m_animationList(new QListWidget(this))
     , m_animationNameEdit(new QLineEdit(this))
     , m_fpsSpinBox(new QDoubleSpinBox(this))
@@ -128,8 +129,27 @@ CreatureEditorPage::CreatureEditorPage(
     toolsLayout->addWidget(pencilButton);
     toolsLayout->addWidget(brushButton);
     toolsLayout->addWidget(eraserButton);
-    toolsLayout->addStretch();
+    toolsLayout->addSpacing(12);
 
+    auto* brushSettingsLabel =
+        new QLabel("Brush Settings", toolsPanel);
+
+    toolsLayout->addWidget(brushSettingsLabel);
+
+    auto* brushSizeLabel =
+        new QLabel("Size: 5 px", toolsPanel);
+
+    auto* brushSizeSlider =
+        new QSlider(Qt::Horizontal, toolsPanel);
+
+    brushSizeSlider->setRange(1, 20);
+    brushSizeSlider->setValue(5);
+    brushSizeSlider->setToolTip("Brush Size");
+
+    toolsLayout->addWidget(brushSizeLabel);
+    toolsLayout->addWidget(brushSizeSlider);
+
+    toolsLayout->addStretch();
     workspaceSplitter->addWidget(toolsPanel);
 
     auto* toolGroup =
@@ -159,7 +179,18 @@ CreatureEditorPage::CreatureEditorPage(
         new PaintCanvas(m_document, canvasPanel);
 
     canvasLayout->addWidget(canvas, 1);
+    QObject::connect(
+    brushSizeSlider,
+    &QSlider::valueChanged,
+    canvas,
+    [canvas, brushSizeLabel](int value)
+    {
+        canvas->setBrushSize(
+            static_cast<std::size_t>(value));
 
+        brushSizeLabel->setText(
+            QString("Size: %1 px").arg(value));
+    });
     workspaceSplitter->addWidget(canvasPanel);
 
     // ---------------------------------------------------------

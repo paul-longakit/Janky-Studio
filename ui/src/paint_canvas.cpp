@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cmath>
 
+#include <QImage>
 #include <QMouseEvent>
 #include <QPainter>
 #include <QPaintEvent>
@@ -43,50 +44,48 @@ void PaintCanvas::paintEvent(QPaintEvent* event)
         return;
     }
 
-    const auto& layer = m_document.layer(0);
+    if (m_imageDirty)
+    {
+        rebuildImage();
+    }
+
+    if (m_image.isNull())
+    {
+        return;
+    }
 
     const double scaleX =
         static_cast<double>(width()) /
-        static_cast<double>(m_document.width());
+        static_cast<double>(m_image.width());
 
     const double scaleY =
         static_cast<double>(height()) /
-        static_cast<double>(m_document.height());
+        static_cast<double>(m_image.height());
 
     const double scale =
         std::min(scaleX, scaleY);
 
-    const double canvasWidth =
-        static_cast<double>(m_document.width()) * scale;
+    const int canvasWidth =
+        static_cast<int>(
+            static_cast<double>(m_image.width()) * scale);
 
-    const double canvasHeight =
-        static_cast<double>(m_document.height()) * scale;
+    const int canvasHeight =
+        static_cast<int>(
+            static_cast<double>(m_image.height()) * scale);
 
-    const double offsetX =
-        (static_cast<double>(width()) - canvasWidth) / 2.0;
+    const int offsetX =
+        (width() - canvasWidth) / 2;
 
-    const double offsetY =
-        (static_cast<double>(height()) - canvasHeight) / 2.0;
+    const int offsetY =
+        (height() - canvasHeight) / 2;
 
-    for (std::size_t y = 0; y < layer.height(); ++y)
-    {
-        for (std::size_t x = 0; x < layer.width(); ++x)
-        {
-            const auto& pixel = layer.pixel(x, y);
-
-            painter.fillRect(
-                QRectF(
-                    offsetX + static_cast<double>(x) * scale,
-                    offsetY + static_cast<double>(y) * scale,
-                    scale,
-                    scale),
-                QColor(
-                    pixel.red,
-                    pixel.green,
-                    pixel.blue,
-                    pixel.alpha));
-        }
-    }
+    painter.drawImage(
+        QRect(
+            offsetX,
+            offsetY,
+            canvasWidth,
+            canvasHeight),
+        m_image);
 }
 
 void PaintCanvas::mousePressEvent(QMouseEvent* event)
@@ -97,7 +96,12 @@ void PaintCanvas::mousePressEvent(QMouseEvent* event)
     }
 
     m_drawing = true;
-    paintAt(event->position().toPoint());
+    m_lastPaintPosition = event->position().toPoint();
+
+    paintAt(m_lastPaintPosition);
+
+    m_imageDirty = true;
+    update();
 }
 
 void PaintCanvas::mouseMoveEvent(QMouseEvent* event)
@@ -107,7 +111,45 @@ void PaintCanvas::mouseMoveEvent(QMouseEvent* event)
         return;
     }
 
-    paintAt(event->position().toPoint());
+    const QPoint currentPosition =
+        event->position().toPoint();
+
+    const QPoint delta =
+        currentPosition - m_lastPaintPosition;
+
+    const int distance =
+        std::max(
+            std::abs(delta.x()),
+            std::abs(delta.y()));
+
+    if (distance <= 0)
+    {
+        return;
+    }
+
+    for (int step = 1; step <= distance; ++step)
+    {
+        const double t =
+            static_cast<double>(step) /
+            static_cast<double>(distance);
+
+        const QPoint interpolatedPosition(
+            static_cast<int>(
+                std::round(
+                    m_lastPaintPosition.x() +
+                    delta.x() * t)),
+            static_cast<int>(
+                std::round(
+                    m_lastPaintPosition.y() +
+                    delta.y() * t)));
+
+        paintAt(interpolatedPosition);
+    }
+
+    m_lastPaintPosition = currentPosition;
+
+    m_imageDirty = true;
+    update();
 }
 
 void PaintCanvas::mouseReleaseEvent(QMouseEvent* event)
@@ -118,6 +160,43 @@ void PaintCanvas::mouseReleaseEvent(QMouseEvent* event)
     }
 
     m_drawing = false;
+}
+
+void PaintCanvas::rebuildImage()
+{
+    if (m_document.layerCount() == 0)
+    {
+        m_image = QImage();
+        m_imageDirty = false;
+        return;
+    }
+
+    const auto& layer = m_document.layer(0);
+
+    m_image = QImage(
+        static_cast<int>(layer.width()),
+        static_cast<int>(layer.height()),
+        QImage::Format_RGBA8888);
+
+    for (std::size_t y = 0; y < layer.height(); ++y)
+    {
+        auto* scanLine =
+            m_image.scanLine(static_cast<int>(y));
+
+        for (std::size_t x = 0; x < layer.width(); ++x)
+        {
+            const auto& pixel = layer.pixel(x, y);
+
+            const auto offset = x * 4;
+
+            scanLine[offset + 0] = pixel.red;
+            scanLine[offset + 1] = pixel.green;
+            scanLine[offset + 2] = pixel.blue;
+            scanLine[offset + 3] = pixel.alpha;
+        }
+    }
+
+    m_imageDirty = false;
 }
 
 void PaintCanvas::paintAt(const QPoint& position)
@@ -175,7 +254,18 @@ void PaintCanvas::paintAt(const QPoint& position)
 
     paintPixel(layer, x, y);
 
-    update();
+    const auto& pixel = layer.pixel(x, y);
+
+    m_image.setPixelColor(
+        static_cast<int>(x),
+        static_cast<int>(y),
+        QColor(
+            pixel.red,
+            pixel.green,
+            pixel.blue,
+            pixel.alpha));
+
+    paintPixel(layer, x, y);
 }
 
 void PaintCanvas::paintPixel(
@@ -216,6 +306,18 @@ void PaintCanvas::paintPixel(
         break;
     }
     }
+}
+
+void PaintCanvas::setBrushSize(std::size_t size)
+{
+    auto settings = m_brush.settings();
+    settings.size = size;
+    m_brush.setSettings(settings);
+}
+
+std::size_t PaintCanvas::brushSize() const
+{
+    return m_brush.settings().size;
 }
 
 } // namespace creature_studio
