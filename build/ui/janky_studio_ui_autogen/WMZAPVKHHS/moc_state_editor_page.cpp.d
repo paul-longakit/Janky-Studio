@@ -4,6 +4,8 @@
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \

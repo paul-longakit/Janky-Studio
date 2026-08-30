@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o.d"
   "CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.o"
   "CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.o.d"
+  "CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o"
+  "CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o.d"
   "CMakeFiles/janky_studio_tests.dir/painting/paint_document_tests.cpp.o"
   "CMakeFiles/janky_studio_tests.dir/painting/paint_document_tests.cpp.o.d"
   "CMakeFiles/janky_studio_tests.dir/statemachine/state_machine_runner_tests.cpp.o"

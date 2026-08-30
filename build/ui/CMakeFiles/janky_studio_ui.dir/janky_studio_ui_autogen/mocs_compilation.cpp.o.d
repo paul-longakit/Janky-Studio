@@ -204,6 +204,10 @@ ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
+ /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+ /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
+ /usr/include/c++/13/optional \
+ /usr/include/c++/13/bits/enable_special_members.h \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -229,9 +233,7 @@ ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o
  /usr/include/c++/13/version \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
- /usr/include/c++/13/variant \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/parse_numbers.h /usr/include/c++/13/optional \
+ /usr/include/c++/13/variant /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \

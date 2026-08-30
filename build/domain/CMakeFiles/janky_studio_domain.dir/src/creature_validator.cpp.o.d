@@ -133,6 +133,13 @@ domain/CMakeFiles/janky_studio_domain.dir/src/creature_validator.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
+ /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+ /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
+ /usr/include/c++/13/optional /usr/include/c++/13/exception \
+ /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -144,11 +151,7 @@ domain/CMakeFiles/janky_studio_domain.dir/src/creature_validator.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/ranges_algo.h /usr/include/c++/13/optional \
- /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
- /usr/include/c++/13/bits/cxxabi_init_exception.h \
- /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
- /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/ranges_algo.h \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \

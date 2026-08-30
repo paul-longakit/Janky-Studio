@@ -139,13 +139,28 @@ painting/CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.s"
 	cd "/home/paulus/Desktop/Janky Studio/build/painting" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/paulus/Desktop/Janky Studio/painting/src/animation_frame_converter.cpp" -o CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.s
 
+painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o: painting/CMakeFiles/janky_studio_painting.dir/flags.make
+painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o: /home/paulus/Desktop/Janky\ Studio/painting/src/creature_part_converter.cpp
+painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o: painting/CMakeFiles/janky_studio_painting.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/paulus/Desktop/Janky Studio/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o"
+	cd "/home/paulus/Desktop/Janky Studio/build/painting" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o -MF CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o.d -o CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o -c "/home/paulus/Desktop/Janky Studio/painting/src/creature_part_converter.cpp"
+
+painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.i"
+	cd "/home/paulus/Desktop/Janky Studio/build/painting" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/paulus/Desktop/Janky Studio/painting/src/creature_part_converter.cpp" > CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.i
+
+painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.s"
+	cd "/home/paulus/Desktop/Janky Studio/build/painting" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/paulus/Desktop/Janky Studio/painting/src/creature_part_converter.cpp" -o CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.s
+
 # Object files for target janky_studio_painting
 janky_studio_painting_OBJECTS = \
 "CMakeFiles/janky_studio_painting.dir/src/paint_layer.cpp.o" \
 "CMakeFiles/janky_studio_painting.dir/src/paint_frame.cpp.o" \
 "CMakeFiles/janky_studio_painting.dir/src/paint_document.cpp.o" \
 "CMakeFiles/janky_studio_painting.dir/src/brush.cpp.o" \
-"CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o"
+"CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o" \
+"CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o"
 
 # External object files for target janky_studio_painting
 janky_studio_painting_EXTERNAL_OBJECTS =
@@ -155,9 +170,10 @@ painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.d
 painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.dir/src/paint_document.cpp.o
 painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.dir/src/brush.cpp.o
 painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o
+painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o
 painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.dir/build.make
 painting/libjanky_studio_painting.a: painting/CMakeFiles/janky_studio_painting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/paulus/Desktop/Janky Studio/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libjanky_studio_painting.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/paulus/Desktop/Janky Studio/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libjanky_studio_painting.a"
 	cd "/home/paulus/Desktop/Janky Studio/build/painting" && $(CMAKE_COMMAND) -P CMakeFiles/janky_studio_painting.dir/cmake_clean_target.cmake
 	cd "/home/paulus/Desktop/Janky Studio/build/painting" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/janky_studio_painting.dir/link.txt --verbose=$(VERBOSE)
 

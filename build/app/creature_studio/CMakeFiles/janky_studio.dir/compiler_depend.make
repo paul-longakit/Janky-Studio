@@ -7,6 +7,8 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main.cpp.o: /home/paulus/Des
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -478,10 +480,13 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_type.hpp \
+  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/creature_part_converter.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_document.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_layer.hpp \
@@ -948,6 +953,8 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 
 /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/pixel.hpp:
 
+/home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/creature_part_converter.hpp:
+
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -1242,9 +1249,7 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp:
 
@@ -1259,12 +1264,6 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/bits/quoted_string.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h:
 
@@ -1306,15 +1305,15 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 
 /usr/include/c++/13/cstddef:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
 /usr/include/c++/13/cstdint:
 
 /usr/include/c++/13/cstdlib:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -1350,17 +1349,11 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 
 /usr/include/c++/13/bits/parse_numbers.h:
 
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/c++/13/numbers:
-
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13/bits/utility.h:
-
-/usr/include/c++/13/tr1/beta_function.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
 
@@ -1382,8 +1375,6 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/include/c++/13/bits/move_only_function.h:
-
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
@@ -1395,14 +1386,6 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
 
 /usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
@@ -1469,6 +1452,44 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/c++/13/bits/stl_tree.h:
 
 /usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/c++/13/numbers:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/bits/ranges_util.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
 
@@ -1538,6 +1559,34 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 
 /usr/include/c++/13/span:
 
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_type.hpp:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/move_only_function.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/math.h:
+
 /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp:
 
 /usr/include/wchar.h:
@@ -1545,26 +1594,6 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
-
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_type.hpp:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/c++/13/bits/ranges_util.h:
 
 /usr/include/alloca.h:
 
@@ -1581,18 +1610,6 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/locale_conv.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
 
@@ -1635,10 +1652,6 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/optional:
 
@@ -1911,5 +1924,3 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o: /home/pau
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:

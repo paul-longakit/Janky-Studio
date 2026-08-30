@@ -133,6 +133,13 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
+ /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+ /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
+ /usr/include/c++/13/optional /usr/include/c++/13/exception \
+ /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -158,12 +165,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: \
  /usr/include/c++/13/version \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
- /usr/include/c++/13/variant \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/parse_numbers.h /usr/include/c++/13/optional \
- /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
- /usr/include/c++/13/bits/cxxabi_init_exception.h \
- /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/variant /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
@@ -398,6 +400,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/animation_frame_converter.hpp \
+ /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/creature_part_converter.hpp \
  /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/widgets/paint_canvas.hpp \
  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush.hpp \
  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush_settings.hpp \

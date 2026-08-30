@@ -836,6 +836,8 @@
  mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
  mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature.hpp
+ mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_part.hpp
+ mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_pivot.hpp
  mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state.hpp
  mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_machine.hpp
  mdp:/home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_transition.hpp

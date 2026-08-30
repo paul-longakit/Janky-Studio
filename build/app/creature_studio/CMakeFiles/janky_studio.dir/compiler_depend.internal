@@ -8,6 +8,8 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main.cpp.o
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_part.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_pivot.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_machine.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_transition.hpp
@@ -480,10 +482,13 @@ app/creature_studio/CMakeFiles/janky_studio.dir/src/main_window.cpp.o
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_part.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_pivot.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_machine.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_transition.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_type.hpp
+ /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/creature_part_converter.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/paint_document.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/paint_frame.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/paint_layer.hpp

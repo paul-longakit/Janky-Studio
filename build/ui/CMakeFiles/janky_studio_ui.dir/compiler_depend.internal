@@ -13,6 +13,8 @@ ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_part.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_pivot.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_machine.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_transition.hpp
@@ -938,6 +940,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_part.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_pivot.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_machine.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_transition.hpp
@@ -945,6 +949,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/animation_frame_converter.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/brush.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/brush_settings.hpp
+ /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/creature_part_converter.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/paint_document.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/paint_frame.hpp
  /home/paulus/Desktop/Janky Studio/painting/include/creature_studio/painting/paint_layer.hpp
@@ -2879,6 +2884,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_part.hpp
+ /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/creature_pivot.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_machine.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/state_transition.hpp

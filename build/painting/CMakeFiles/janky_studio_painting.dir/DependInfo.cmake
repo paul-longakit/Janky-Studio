@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/paulus/Desktop/Janky Studio/painting/src/animation_frame_converter.cpp" "painting/CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o" "gcc" "painting/CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o.d"
   "/home/paulus/Desktop/Janky Studio/painting/src/brush.cpp" "painting/CMakeFiles/janky_studio_painting.dir/src/brush.cpp.o" "gcc" "painting/CMakeFiles/janky_studio_painting.dir/src/brush.cpp.o.d"
+  "/home/paulus/Desktop/Janky Studio/painting/src/creature_part_converter.cpp" "painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o" "gcc" "painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o.d"
   "/home/paulus/Desktop/Janky Studio/painting/src/paint_document.cpp" "painting/CMakeFiles/janky_studio_painting.dir/src/paint_document.cpp.o" "gcc" "painting/CMakeFiles/janky_studio_painting.dir/src/paint_document.cpp.o.d"
   "/home/paulus/Desktop/Janky Studio/painting/src/paint_frame.cpp" "painting/CMakeFiles/janky_studio_painting.dir/src/paint_frame.cpp.o" "gcc" "painting/CMakeFiles/janky_studio_painting.dir/src/paint_frame.cpp.o.d"
   "/home/paulus/Desktop/Janky Studio/painting/src/paint_layer.cpp" "painting/CMakeFiles/janky_studio_painting.dir/src/paint_layer.cpp.o" "gcc" "painting/CMakeFiles/janky_studio_painting.dir/src/paint_layer.cpp.o.d"

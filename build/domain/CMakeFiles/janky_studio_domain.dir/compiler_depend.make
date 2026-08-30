@@ -89,6 +89,8 @@ domain/CMakeFiles/janky_studio_domain.dir/src/creature_validator.cpp.o: /home/pa
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_validator.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/simulation_readiness.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
@@ -282,6 +284,8 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_validator.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/simulation_readiness.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
@@ -303,8 +307,11 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
+  /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/exception_ptr.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -315,6 +322,7 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/postypes.h \
@@ -355,6 +363,7 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/exception \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
@@ -363,11 +372,13 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numbers \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -451,8 +462,6 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
@@ -528,6 +537,8 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 /usr/include/c++/13/exception:
 
 /usr/include/c++/13/cwchar:
+
+/usr/include/c++/13/clocale:
 
 /usr/include/c++/13/string_view:
 
@@ -617,6 +628,12 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
 /usr/include/c++/13/new:
 
 /usr/include/c++/13/ext/alloc_traits.h:
@@ -636,6 +653,10 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp:
 
 /home/paulus/Desktop/Janky\ Studio/domain/src/animation_frame.cpp:
 
@@ -658,12 +679,6 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 /usr/include/endian.h:
 
 /usr/include/c++/13/bits/max_size_type.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/c++/13/cerrno:
 
 /usr/include/c++/13/bits/stl_function.h:
 
@@ -742,6 +757,8 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 /home/paulus/Desktop/Janky\ Studio/domain/src/creature_validator.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -832,5 +849,3 @@ domain/CMakeFiles/janky_studio_domain.dir/src/domain_models.cpp.o: /home/paulus/
 /usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/clocale:
