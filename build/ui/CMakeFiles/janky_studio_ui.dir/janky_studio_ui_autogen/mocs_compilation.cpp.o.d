@@ -396,4 +396,6 @@ ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_main_menu_page.cpp \
- /home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/../../../../ui/include/creature_studio/ui/pages/main_menu_page.hpp
+ /home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/../../../../ui/include/creature_studio/ui/pages/main_menu_page.hpp \
+ /home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp \
+ /home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/../../../../ui/include/creature_studio/ui/pages/state_editor_page.hpp

@@ -437,33 +437,178 @@ Zero 0 0
 Brush 0 0
 Brush 0 0
 Paint 0 0
-State machine starts in its initial state 1 0.0093475
-State machine transitions when condition matches 1 0.0100264
-State machine ignores unknown condition 1 0.0129043
-State machine advances time in current state 1 0.0125555
-State transition resets state time 1 0.0124827
-Valid creature is ready for simulation 1 0.0126618
-Creature without states is not ready for simulation 1 0.00948086
-Creature with invalid initial state is not ready 1 0.0106783
-Creature without Idle state is not ready 1 0.0116519
-State with missing animation is not ready 1 0.0157148
-Transition to missing state is not ready 1 0.0116604
-Animation without frames is not ready 1 0.00902974
-Animation frame without image data is not ready 1 0.0140125
-Animation frame with invalid duration is not ready 1 0.0105414
-Paint document stores its dimensions 1 0.0101089
-Paint document can add a layer 1 0.010924
-Paint layer stores pixels 1 0.00922188
-Paint layer rejects invalid pixel coordinates 1 0.0131667
-Paint document can remove a layer 1 0.0175139
-Paint document can add a frame 1 0.0104557
-Paint document layers belong to the active frame 1 0.0123821
-Paint document can switch active frame 1 0.0169118
-Brush paints a pixel 1 0.0157946
-Brush paints multiple pixels 1 0.0110357
-Brush does not paint outside layer 1 0.0114385
-Zero size brush does nothing 1 0.012681
-Brush opacity blends with existing pixel 1 0.0112808
-Brush settings can be changed 1 0.0125773
-Paint layer converts to animation frame 1 0.011499
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+Valid 0 0
+Creature 0 0
+Creature 0 0
+Creature 0 0
+State 0 0
+Transition 0 0
+Animation 0 0
+Animation 0 0
+Animation 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Brush 0 0
+Brush 0 0
+Brush 0 0
+Zero 0 0
+Brush 0 0
+Brush 0 0
+Paint 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+Valid 0 0
+Creature 0 0
+Creature 0 0
+Creature 0 0
+State 0 0
+Transition 0 0
+Animation 0 0
+Animation 0 0
+Animation 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Brush 0 0
+Brush 0 0
+Brush 0 0
+Zero 0 0
+Brush 0 0
+Brush 0 0
+Paint 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+Valid 0 0
+Creature 0 0
+Creature 0 0
+Creature 0 0
+State 0 0
+Transition 0 0
+Animation 0 0
+Animation 0 0
+Animation 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Brush 0 0
+Brush 0 0
+Brush 0 0
+Zero 0 0
+Brush 0 0
+Brush 0 0
+Paint 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+Valid 0 0
+Creature 0 0
+Creature 0 0
+Creature 0 0
+State 0 0
+Transition 0 0
+Animation 0 0
+Animation 0 0
+Animation 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Brush 0 0
+Brush 0 0
+Brush 0 0
+Zero 0 0
+Brush 0 0
+Brush 0 0
+Paint 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+State 0 0
+Valid 0 0
+Creature 0 0
+Creature 0 0
+Creature 0 0
+State 0 0
+Transition 0 0
+Animation 0 0
+Animation 0 0
+Animation 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Paint 0 0
+Brush 0 0
+Brush 0 0
+Brush 0 0
+Zero 0 0
+Brush 0 0
+Brush 0 0
+Paint 0 0
+State machine starts in its initial state 1 0.00910932
+State machine transitions when condition matches 1 0.00885399
+State machine ignores unknown condition 1 0.00977385
+State machine advances time in current state 1 0.0165178
+State transition resets state time 1 0.00939353
+Valid creature is ready for simulation 1 0.0110346
+Creature without states is not ready for simulation 1 0.00947239
+Creature with invalid initial state is not ready 1 0.0105235
+Creature without Idle state is not ready 1 0.009251
+State with missing animation is not ready 1 0.0104541
+Transition to missing state is not ready 1 0.0119829
+Animation without frames is not ready 1 0.0149248
+Animation frame without image data is not ready 1 0.01301
+Animation frame with invalid duration is not ready 1 0.0121442
+Paint document stores its dimensions 1 0.0132892
+Paint document can add a layer 1 0.0119646
+Paint layer stores pixels 1 0.0115288
+Paint layer rejects invalid pixel coordinates 1 0.01224
+Paint document can remove a layer 1 0.00984513
+Paint document can add a frame 1 0.0125659
+Paint document layers belong to the active frame 1 0.0138359
+Paint document can switch active frame 1 0.00865794
+Brush paints a pixel 1 0.0091319
+Brush paints multiple pixels 1 0.00904415
+Brush does not paint outside layer 1 0.0123283
+Zero size brush does nothing 1 0.013889
+Brush opacity blends with existing pixel 1 0.0120948
+Brush settings can be changed 1 0.00969647
+Paint layer converts to animation frame 1 0.00972699
 ---

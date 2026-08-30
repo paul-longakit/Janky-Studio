@@ -5,8 +5,10 @@ ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o
  /home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/mocs_compilation.cpp
  /home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp
  /home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/main_menu_page.hpp
+ /home/paulus/Desktop/Janky Studio/ui/include/creature_studio/ui/pages/state_editor_page.hpp
  /home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp
  /home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_main_menu_page.cpp
+ /home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp
  /home/paulus/Desktop/Janky Studio/core/include/creature_studio/core/unique_id.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation.hpp
  /home/paulus/Desktop/Janky Studio/domain/include/creature_studio/domain/animation_frame.hpp
@@ -1393,6 +1395,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout
@@ -1405,6 +1408,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
@@ -1414,6 +1418,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
@@ -1435,6 +1440,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbutton.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h

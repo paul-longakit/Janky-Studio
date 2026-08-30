@@ -461,4 +461,6 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h
