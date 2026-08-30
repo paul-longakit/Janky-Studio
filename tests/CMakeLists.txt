@@ -6,6 +6,7 @@ add_executable(janky_studio_tests
     painting/paint_document_tests.cpp
     painting/brush_tests.cpp
     painting/animation_frame_converter_tests.cpp
+    painting/creature_part_converter_tests.cpp
 )
 
 target_link_libraries(janky_studio_tests

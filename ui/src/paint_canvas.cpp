@@ -264,8 +264,6 @@ void PaintCanvas::paintAt(const QPoint& position)
             pixel.green,
             pixel.blue,
             pixel.alpha));
-
-    paintPixel(layer, x, y);
 }
 
 void PaintCanvas::paintPixel(
