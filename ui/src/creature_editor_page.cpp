@@ -23,6 +23,7 @@
 #include <QToolButton>
 #include <QVBoxLayout>
 #include <QSignalBlocker>
+#include <QButtonGroup>
 
 namespace creature_studio
 {
@@ -107,18 +108,22 @@ CreatureEditorPage::CreatureEditorPage(
 
     pencilButton->setText("Pencil");
     pencilButton->setToolTip("Pencil");
+    pencilButton->setCheckable(true);
 
     auto* brushButton =
         new QToolButton(toolsPanel);
 
     brushButton->setText("Brush");
     brushButton->setToolTip("Brush");
+    brushButton->setChecked(true);
+    brushButton->setCheckable(true);
 
     auto* eraserButton =
         new QToolButton(toolsPanel);
 
     eraserButton->setText("Eraser");
     eraserButton->setToolTip("Eraser");
+    eraserButton->setCheckable(true);
 
     toolsLayout->addWidget(pencilButton);
     toolsLayout->addWidget(brushButton);
@@ -126,6 +131,15 @@ CreatureEditorPage::CreatureEditorPage(
     toolsLayout->addStretch();
 
     workspaceSplitter->addWidget(toolsPanel);
+
+    auto* toolGroup =
+        new QButtonGroup(this);
+
+    toolGroup->setExclusive(true);
+
+    toolGroup->addButton(pencilButton);
+    toolGroup->addButton(brushButton);
+    toolGroup->addButton(eraserButton);
 
     // ---------------------------------------------------------
     // Center: Canvas
@@ -286,6 +300,36 @@ CreatureEditorPage::CreatureEditorPage(
     // ---------------------------------------------------------
     // Existing behavior
     // ---------------------------------------------------------
+
+    connect(
+        pencilButton,
+        &QToolButton::clicked,
+        this,
+        [canvas]()
+        {
+            canvas->setTool(
+                PaintCanvas::Tool::Pencil);
+        });
+
+    connect(
+        brushButton,
+        &QToolButton::clicked,
+        this,
+        [canvas]()
+        {
+            canvas->setTool(
+                PaintCanvas::Tool::Brush);
+        });
+
+    connect(
+        eraserButton,
+        &QToolButton::clicked,
+        this,
+        [canvas]()
+        {
+            canvas->setTool(
+                PaintCanvas::Tool::Eraser);
+        });
 
     connect(
         m_animationList,

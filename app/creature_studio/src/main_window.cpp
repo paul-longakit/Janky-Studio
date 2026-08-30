@@ -51,6 +51,16 @@ MainWindow::MainWindow(QWidget* parent)
     );
 
     connect(
+        stateEditor,
+        &StateEditorPage::backRequested,
+        this,
+        [this, creatureEditor]()
+        {
+            m_pages->setCurrentWidget(creatureEditor);
+        }
+    );
+
+    connect(
         creatureEditor,
         &CreatureEditorPage::backRequested,
         this,
