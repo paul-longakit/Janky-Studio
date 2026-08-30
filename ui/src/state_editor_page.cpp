@@ -96,9 +96,7 @@ StateEditorPage::StateEditorPage(
     , m_stateNameEdit(new QLineEdit(this))
     , m_stateTypeCombo(new QComboBox(this))
     , m_stateAnimationCombo(new QComboBox(this))
-    , m_setInitialStateButton(new QPushButton(
-          "Set as Initial State",
-          this))
+    , m_setInitialStateButton(new QPushButton("Set as Initial State",this))
     , m_addStateButton(new QPushButton("Add State", this))
     , m_removeStateButton(new QPushButton("Remove State", this))
     , m_transitionList(new QListWidget(this))
@@ -106,6 +104,7 @@ StateEditorPage::StateEditorPage(
     , m_transitionConditionEdit(new QLineEdit(this))
     , m_addTransitionButton(new QPushButton("Add Transition", this))
     , m_removeTransitionButton(new QPushButton("Remove Transition", this))
+    , m_backButton(new QPushButton("Back", this))
 {
     auto* mainLayout = new QHBoxLayout(this);
 
@@ -170,8 +169,20 @@ StateEditorPage::StateEditorPage(
 
     detailsPanel->addStretch();
 
+    detailsPanel->addWidget(
+        m_backButton);
+
     mainLayout->addLayout(statePanel, 1);
     mainLayout->addLayout(detailsPanel, 2);
+
+    connect(
+        m_backButton,
+        &QPushButton::clicked,
+        this,
+        [this]()
+        {
+            emit backRequested();
+        });
 
     connect(
         m_stateList,

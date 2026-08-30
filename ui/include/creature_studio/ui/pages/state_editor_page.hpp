@@ -14,10 +14,15 @@ namespace creature_studio
 
 class StateEditorPage final : public QWidget
 {
+    Q_OBJECT
+
 public:
     explicit StateEditorPage(
         domain::Creature& creature,
         QWidget* parent = nullptr);
+
+signals:
+    void backRequested();
 
 private:
     void refreshStateList();
@@ -55,6 +60,7 @@ private:
     QLineEdit* m_transitionConditionEdit;
     QPushButton* m_addTransitionButton;
     QPushButton* m_removeTransitionButton;
+    QPushButton* m_backButton;
 };
 
 } // namespace creature_studio
