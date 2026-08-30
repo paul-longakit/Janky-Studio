@@ -1,4 +1,4 @@
-/home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp: /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp \
+/home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp: /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/state_editor_page.hpp \
   /home/paulus/Desktop/Janky\ Studio/build/ui/janky_studio_ui_autogen/moc_predefs.h \
   /home/paulus/Desktop/Janky\ Studio/core/include/creature_studio/core/unique_id.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
@@ -10,10 +10,6 @@
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_type.hpp \
-  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_document.hpp \
-  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_frame.hpp \
-  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_layer.hpp \
-  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/pixel.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

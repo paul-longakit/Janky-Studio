@@ -212,6 +212,30 @@ painting/brush_tests.cpp.s:
 	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/janky_studio_tests.dir/build.make tests/CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.s
 .PHONY : painting/brush_tests.cpp.s
 
+painting/creature_part_converter_tests.o: painting/creature_part_converter_tests.cpp.o
+.PHONY : painting/creature_part_converter_tests.o
+
+# target to build an object file
+painting/creature_part_converter_tests.cpp.o:
+	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/janky_studio_tests.dir/build.make tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o
+.PHONY : painting/creature_part_converter_tests.cpp.o
+
+painting/creature_part_converter_tests.i: painting/creature_part_converter_tests.cpp.i
+.PHONY : painting/creature_part_converter_tests.i
+
+# target to preprocess a source file
+painting/creature_part_converter_tests.cpp.i:
+	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/janky_studio_tests.dir/build.make tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.i
+.PHONY : painting/creature_part_converter_tests.cpp.i
+
+painting/creature_part_converter_tests.s: painting/creature_part_converter_tests.cpp.s
+.PHONY : painting/creature_part_converter_tests.s
+
+# target to generate assembly for a file
+painting/creature_part_converter_tests.cpp.s:
+	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/janky_studio_tests.dir/build.make tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.s
+.PHONY : painting/creature_part_converter_tests.cpp.s
+
 painting/paint_document_tests.o: painting/paint_document_tests.cpp.o
 .PHONY : painting/paint_document_tests.o
 
@@ -279,6 +303,9 @@ help:
 	@echo "... painting/brush_tests.o"
 	@echo "... painting/brush_tests.i"
 	@echo "... painting/brush_tests.s"
+	@echo "... painting/creature_part_converter_tests.o"
+	@echo "... painting/creature_part_converter_tests.i"
+	@echo "... painting/creature_part_converter_tests.s"
 	@echo "... painting/paint_document_tests.o"
 	@echo "... painting/paint_document_tests.i"
 	@echo "... painting/paint_document_tests.s"

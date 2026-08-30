@@ -9,6 +9,8 @@ add_library(janky_studio_domain STATIC
     include/creature_studio/domain/simulation_readiness.hpp
     include/creature_studio/domain/validation_error.hpp
     include/creature_studio/domain/creature_validator.hpp
+    include/creature_studio/domain/creature_part.hpp
+    include/creature_studio/domain/creature_pivot.hpp
     src/creature_validator.cpp
     src/animation_frame.cpp
     src/domain_models.cpp

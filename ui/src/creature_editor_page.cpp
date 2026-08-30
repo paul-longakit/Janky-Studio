@@ -7,6 +7,7 @@
 #include <utility>
 
 #include <creature_studio/painting/animation_frame_converter.hpp>
+#include <creature_studio/painting/creature_part_converter.hpp>
 #include <creature_studio/ui/widgets/paint_canvas.hpp>
 
 #include <QCheckBox>
@@ -24,6 +25,7 @@
 #include <QVBoxLayout>
 #include <QSignalBlocker>
 #include <QButtonGroup>
+#include <QSlider>
 
 namespace creature_studio
 {
@@ -33,7 +35,7 @@ CreatureEditorPage::CreatureEditorPage(
     QWidget* parent)
     : QWidget(parent)
     , m_creature(creature)
-    , m_document(32, 32)
+    , m_document(1080, 1080)
     , m_animationList(new QListWidget(this))
     , m_animationNameEdit(new QLineEdit(this))
     , m_fpsSpinBox(new QDoubleSpinBox(this))
@@ -41,6 +43,8 @@ CreatureEditorPage::CreatureEditorPage(
     , m_addAnimationButton(new QPushButton("Add Animation", this))
     , m_removeAnimationButton(new QPushButton("Remove Animation", this))
     , m_saveFrameButton(new QPushButton("Save Frame", this))
+    , m_partList(new QListWidget(this))
+    , m_commitPartButton(new QPushButton("Commit as Part", this))
 {
     m_document.addLayer("Body");
 
@@ -128,8 +132,27 @@ CreatureEditorPage::CreatureEditorPage(
     toolsLayout->addWidget(pencilButton);
     toolsLayout->addWidget(brushButton);
     toolsLayout->addWidget(eraserButton);
-    toolsLayout->addStretch();
+    toolsLayout->addSpacing(12);
 
+    auto* brushSettingsLabel =
+        new QLabel("Brush Settings", toolsPanel);
+
+    toolsLayout->addWidget(brushSettingsLabel);
+
+    auto* brushSizeLabel =
+        new QLabel("Size: 5 px", toolsPanel);
+
+    auto* brushSizeSlider =
+        new QSlider(Qt::Horizontal, toolsPanel);
+
+    brushSizeSlider->setRange(1, 20);
+    brushSizeSlider->setValue(5);
+    brushSizeSlider->setToolTip("Brush Size");
+
+    toolsLayout->addWidget(brushSizeLabel);
+    toolsLayout->addWidget(brushSizeSlider);
+
+    toolsLayout->addStretch();
     workspaceSplitter->addWidget(toolsPanel);
 
     auto* toolGroup =
@@ -159,7 +182,18 @@ CreatureEditorPage::CreatureEditorPage(
         new PaintCanvas(m_document, canvasPanel);
 
     canvasLayout->addWidget(canvas, 1);
+    QObject::connect(
+    brushSizeSlider,
+    &QSlider::valueChanged,
+    canvas,
+    [canvas, brushSizeLabel](int value)
+    {
+        canvas->setBrushSize(
+            static_cast<std::size_t>(value));
 
+        brushSizeLabel->setText(
+            QString("Size: %1 px").arg(value));
+    });
     workspaceSplitter->addWidget(canvasPanel);
 
     // ---------------------------------------------------------
@@ -235,13 +269,11 @@ CreatureEditorPage::CreatureEditorPage(
     auto* layersLayout =
         new QVBoxLayout(layersPanel);
 
-    auto* layerList =
+    m_partList =
         new QListWidget(layersPanel);
 
-    layerList->addItem("Body");
-    layerList->setCurrentRow(0);
-
-    layersLayout->addWidget(layerList);
+    layersLayout->addWidget(m_partList);
+    layersLayout->addWidget(m_commitPartButton);
 
     rootLayout->addWidget(
         layersPanel);
@@ -295,11 +327,13 @@ CreatureEditorPage::CreatureEditorPage(
     m_fpsSpinBox->setRange(0.1, 240.0);
     m_fpsSpinBox->setSingleStep(1.0);
 
+    refreshPartList();
     refreshAnimationList();
 
     // ---------------------------------------------------------
     // Existing behavior
     // ---------------------------------------------------------
+
 
     connect(
         pencilButton,
@@ -405,6 +439,17 @@ CreatureEditorPage::CreatureEditorPage(
         {
             saveFrame();
         });
+
+    connect(
+        m_commitPartButton,
+        &QPushButton::clicked,
+        this,
+        [this]()
+        {
+            commitPart();
+        });
+
+    refreshPartList();
 }
 
 void CreatureEditorPage::saveFrame()
@@ -430,6 +475,57 @@ void CreatureEditorPage::saveFrame()
             m_document.layer(0),
             frameIndex,
             1.0 / animation->fps));
+}
+
+void CreatureEditorPage::refreshPartList()
+{
+    const int previousRow =
+        m_partList->currentRow();
+
+    QSignalBlocker blocker(m_partList);
+
+    m_partList->clear();
+
+    for (const auto& part : m_creature.parts)
+    {
+        m_partList->addItem(
+            QString::fromStdString(part.name));
+    }
+
+    if (m_partList->count() == 0)
+    {
+        return;
+    }
+
+    const int row =
+        std::clamp(
+            previousRow,
+            0,
+            m_partList->count() - 1);
+
+    m_partList->setCurrentRow(row);
+}
+
+void CreatureEditorPage::commitPart()
+{
+    if (m_document.layerCount() == 0)
+    {
+        return;
+    }
+
+    auto part =
+        painting::createCreaturePart(
+            m_document.layer(0));
+
+    if (part.name.empty())
+    {
+        return;
+    }
+
+    m_creature.parts.push_back(
+        std::move(part));
+
+    refreshPartList();
 }
 
 void CreatureEditorPage::refreshAnimationList()

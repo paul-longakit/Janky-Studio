@@ -139,13 +139,28 @@ tests/CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.s"
 	cd "/home/paulus/Desktop/Janky Studio/build/tests" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/paulus/Desktop/Janky Studio/tests/painting/animation_frame_converter_tests.cpp" -o CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.s
 
+tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o: tests/CMakeFiles/janky_studio_tests.dir/flags.make
+tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o: /home/paulus/Desktop/Janky\ Studio/tests/painting/creature_part_converter_tests.cpp
+tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o: tests/CMakeFiles/janky_studio_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/paulus/Desktop/Janky Studio/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o"
+	cd "/home/paulus/Desktop/Janky Studio/build/tests" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o -MF CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o.d -o CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o -c "/home/paulus/Desktop/Janky Studio/tests/painting/creature_part_converter_tests.cpp"
+
+tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.i"
+	cd "/home/paulus/Desktop/Janky Studio/build/tests" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/paulus/Desktop/Janky Studio/tests/painting/creature_part_converter_tests.cpp" > CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.i
+
+tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.s"
+	cd "/home/paulus/Desktop/Janky Studio/build/tests" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/paulus/Desktop/Janky Studio/tests/painting/creature_part_converter_tests.cpp" -o CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.s
+
 # Object files for target janky_studio_tests
 janky_studio_tests_OBJECTS = \
 "CMakeFiles/janky_studio_tests.dir/statemachine/state_machine_runner_tests.cpp.o" \
 "CMakeFiles/janky_studio_tests.dir/domain/creature_validator_tests.cpp.o" \
 "CMakeFiles/janky_studio_tests.dir/painting/paint_document_tests.cpp.o" \
 "CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.o" \
-"CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o"
+"CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o" \
+"CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o"
 
 # External object files for target janky_studio_tests
 janky_studio_tests_EXTERNAL_OBJECTS =
@@ -155,6 +170,7 @@ tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/domain/creatur
 tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/painting/paint_document_tests.cpp.o
 tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/painting/brush_tests.cpp.o
 tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o
+tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o
 tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/build.make
 tests/janky_studio_tests: statemachine/libjanky_studio_statemachine.a
 tests/janky_studio_tests: domain/libjanky_studio_domain.a
@@ -164,7 +180,7 @@ tests/janky_studio_tests: domain/libjanky_studio_domain.a
 tests/janky_studio_tests: core/libjanky_studio_core.a
 tests/janky_studio_tests: /usr/lib/libCatch2.a
 tests/janky_studio_tests: tests/CMakeFiles/janky_studio_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/paulus/Desktop/Janky Studio/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable janky_studio_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/paulus/Desktop/Janky Studio/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable janky_studio_tests"
 	cd "/home/paulus/Desktop/Janky Studio/build/tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/janky_studio_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd "/home/paulus/Desktop/Janky Studio/build/tests" && /usr/bin/cmake -D TEST_TARGET=janky_studio_tests -D "TEST_EXECUTABLE=/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=/home/paulus/Desktop/Janky Studio/build/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=janky_studio_tests_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D TEST_DL_PATHS= -D "CTEST_FILE=/home/paulus/Desktop/Janky Studio/build/tests/janky_studio_tests_tests-b12d07c.cmake" -P /usr/lib/cmake/Catch2/CatchAddTests.cmake
 

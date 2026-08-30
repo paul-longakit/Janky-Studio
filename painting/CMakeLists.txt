@@ -7,6 +7,7 @@ target_sources(janky_studio_painting
         src/paint_document.cpp
         src/brush.cpp
         src/animation_frame_converter.cpp
+        src/creature_part_converter.cpp
 
         include/creature_studio/painting/pixel.hpp
         include/creature_studio/painting/paint_layer.hpp
@@ -15,6 +16,7 @@ target_sources(janky_studio_painting
         include/creature_studio/painting/brush_settings.hpp
         include/creature_studio/painting/brush.hpp
         include/creature_studio/painting/animation_frame_converter.hpp
+        include/creature_studio/painting/creature_part_converter.hpp
 )
 
 target_include_directories(janky_studio_painting

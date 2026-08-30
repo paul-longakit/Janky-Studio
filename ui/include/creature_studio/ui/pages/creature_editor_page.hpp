@@ -28,6 +28,8 @@ signals:
     void backRequested();
 
 private:
+    void refreshPartList();
+
     void refreshAnimationList();
     void refreshAnimationDetails();
 
@@ -39,12 +41,14 @@ private:
     void updateSelectedAnimationLooping();
 
     void saveFrame();
+    void commitPart();
 
     domain::Animation* selectedAnimation();
 
     domain::Creature& m_creature;
     painting::PaintDocument m_document;
 
+    QListWidget* m_partList;
     QListWidget* m_animationList;
     QLineEdit* m_animationNameEdit;
     QDoubleSpinBox* m_fpsSpinBox;
@@ -53,6 +57,7 @@ private:
     QPushButton* m_addAnimationButton;
     QPushButton* m_removeAnimationButton;
     QPushButton* m_saveFrameButton;
+    QPushButton* m_commitPartButton;
 };
 
 } // namespace creature_studio

@@ -4,12 +4,16 @@
 ui/CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o: ui/janky_studio_ui_autogen/mocs_compilation.cpp \
   /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp \
   /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/main_menu_page.hpp \
+  /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/state_editor_page.hpp \
   ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp \
   ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_main_menu_page.cpp \
+  ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp \
   /home/paulus/Desktop/Janky\ Studio/core/include/creature_studio/core/unique_id.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -933,6 +937,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -940,6 +946,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/animation_frame_converter.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush_settings.hpp \
+  /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/creature_part_converter.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_document.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_layer.hpp \
@@ -1269,6 +1276,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -1359,6 +1367,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
@@ -1390,6 +1399,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFormLayout \
@@ -1401,7 +1411,9 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
@@ -1411,6 +1423,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
@@ -1432,6 +1445,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/creature_editor_page.cpp.o: /home/paulus/D
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -2247,6 +2261,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o: /home/paulus/Desktop/J
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -2338,6 +2353,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/paint_canvas.cpp.o: /home/paulus/Desktop/J
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
@@ -2861,6 +2877,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation_frame.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp \
+  /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp \
   /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp \
@@ -3363,8 +3381,6 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant:
 
-/home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/state_editor_page.hpp:
-
 /home/paulus/Desktop/Janky\ Studio/ui/src/state_editor_page.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h:
@@ -3381,7 +3397,19 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -3487,13 +3515,21 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QImage:
+
 /home/paulus/Desktop/Janky\ Studio/ui/src/main_menu_page.cpp:
 
 /usr/include/strings.h:
 
-/usr/include/c++/13/exception:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
+/usr/include/c++/13/iomanip:
+
+/usr/include/c++/13/exception:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox:
 
@@ -3561,6 +3597,8 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/c++/13/tr1/gamma.tcc:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton:
+
 /usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
@@ -3587,9 +3625,19 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
 
-/usr/include/c++/13/bits/hashtable.h:
+/usr/include/x86_64-linux-gnu/bits/confname.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/13/streambuf:
 
@@ -3603,20 +3651,6 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state.hpp:
-
 /usr/include/c++/13/bits/chrono.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h:
@@ -3628,22 +3662,6 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 /usr/include/alloca.h:
 
 /home/paulus/Desktop/Janky\ Studio/ui/src/paint_canvas.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
-
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp:
 
 /usr/include/c++/13/bits/chrono_io.h:
 
@@ -3659,11 +3677,9 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h:
 
-/usr/include/c++/13/bits/hashtable_policy.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/node_handle.h:
 
@@ -3671,9 +3687,61 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/move_only_function.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/variant:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/bits/ranges_util.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/c++/13/istream:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/errno.h:
 
@@ -3683,6 +3751,12 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /home/paulus/Desktop/Janky\ Studio/core/include/creature_studio/core/unique_id.hpp:
 
+/home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/state_editor_page.hpp:
+
+/home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/arena_editor_page.hpp:
+
+/usr/include/c++/13/bits/ranges_algobase.h:
+
 /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/simulation_page.hpp:
 
 /home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/main_menu_page.hpp:
@@ -3691,41 +3765,43 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame:
+
+/home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush.hpp:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
 /home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_type.hpp:
 
 /usr/include/time.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/animation.hpp:
-
-/home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/creature_editor_page.hpp:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/13/bits/ranges_algobase.h:
-
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/libintl.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/paint_frame.hpp:
 
@@ -3733,11 +3809,7 @@ ui/CMakeFiles/janky_studio_ui.dir/src/state_editor_page.cpp.o: /home/paulus/Desk
 
 ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_main_menu_page.cpp:
 
-/usr/include/c++/13/istream:
-
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
 
 ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
@@ -3763,31 +3835,15 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/c++/13/bits/ranges_util.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_pivot.hpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/brush.hpp:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/c++/13/array:
+/usr/include/c++/13/tr1/beta_function.tcc:
 
 /usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/assert.h:
 
@@ -3797,21 +3853,27 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
+/usr/include/c++/13/bits/hashtable.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/usr/include/c++/13/tr1/special_function_util.h:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+/usr/include/c++/13/bits/invoke.h:
 
-/usr/include/c++/13/bits/ranges_cmp.h:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
+
+ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_state_editor_page.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -3827,9 +3889,13 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/c++/13/bits/move_only_function.h:
-
 /usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
 
 /usr/include/linux/errno.h:
 
@@ -3859,8 +3925,6 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/c++/13/bits/move.h:
 
-/usr/include/c++/13/tr1/beta_function.tcc:
-
 /usr/include/c++/13/bits/utility.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
@@ -3868,18 +3932,6 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13/bits/stl_function.h:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/variant:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
 
 /usr/include/c++/13/system_error:
 
@@ -3961,7 +4013,11 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
 
-/usr/include/c++/13/bits/max_size_type.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -3972,8 +4028,6 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 /usr/include/c++/13/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -3989,21 +4043,15 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/home/paulus/Desktop/Janky\ Studio/ui/include/creature_studio/ui/pages/arena_editor_page.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /usr/include/c++/13/bits/locale_conv.h:
 
@@ -4016,6 +4064,10 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
 
@@ -4037,9 +4089,9 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget:
 
-/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp:
-
 /usr/include/c++/13/cstdio:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_machine.hpp:
 
 /usr/include/math.h:
 
@@ -4060,6 +4112,10 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/state_transition.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider:
 
 /usr/include/c++/13/ios:
 
@@ -4213,10 +4269,6 @@ ui/janky_studio_ui_autogen/WMZAPVKHHS/moc_creature_editor_page.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
@@ -4251,9 +4303,9 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h:
 
-/usr/include/c++/13/span:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/13/span:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h:
 
@@ -4290,6 +4342,8 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h:
+
+/home/paulus/Desktop/Janky\ Studio/domain/include/creature_studio/domain/creature_part.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
 
@@ -4329,10 +4383,6 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h:
 
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h:
 
 /usr/include/c++/13/bits/concept_check.h:
@@ -4345,19 +4395,11 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
 
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
 
@@ -4383,6 +4425,14 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /home/paulus/Desktop/Janky\ Studio/ui/src/creature_editor_page.cpp:
 
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/home/paulus/Desktop/Janky\ Studio/painting/include/creature_studio/painting/creature_part_converter.hpp:
+
+/usr/include/c++/13/bits/max_size_type.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QSignalBlocker:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h:
@@ -4401,6 +4451,14 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
 
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit:
 
 /usr/include/c++/13/bits/stl_construct.h:
@@ -4410,6 +4468,12 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h:
 
@@ -4439,34 +4503,10 @@ ui/janky_studio_ui_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
 
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbutton.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QList:
-
-/usr/include/c++/13/iomanip:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:
-
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintEvent:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h:

@@ -250,3 +250,55 @@ TEST_CASE("Animation frame with invalid duration is not ready")
         result,
         "Animation 'IdleAnimation' contains a frame with an invalid duration."));
 }
+TEST_CASE("Creature can contain creature parts")
+{
+    creature_studio::domain::Creature creature;
+
+    creature_studio::domain::CreaturePart body;
+    body.id = 1;
+    body.name = "Body";
+    body.width = 2;
+    body.height = 2;
+    body.imageData = {
+        255, 0, 0, 255,
+        0, 255, 0, 255,
+        0, 0, 255, 255,
+        255, 255, 255, 255
+    };
+
+    creature.parts.push_back(body);
+
+    REQUIRE(creature.parts.size() == 1);
+    REQUIRE(creature.parts[0].id == 1);
+    REQUIRE(creature.parts[0].name == "Body");
+    REQUIRE(creature.parts[0].width == 2);
+    REQUIRE(creature.parts[0].height == 2);
+    REQUIRE(creature.parts[0].imageData.size() == 16);
+
+    REQUIRE(creature.parts[0].pivot.x == 0.0);
+    REQUIRE(creature.parts[0].pivot.y == 0.0);
+
+    creature.parts[0].pivot.x = 1.0;
+    creature.parts[0].pivot.y = 1.5;
+
+    REQUIRE(creature.parts[0].pivot.x == 1.0);
+    REQUIRE(creature.parts[0].pivot.y == 1.5);
+}
+
+TEST_CASE("Creature parts can reference a parent part")
+{
+    using namespace creature_studio::domain;
+
+    CreaturePart body;
+    body.id = 1;
+    body.name = "Body";
+
+    CreaturePart head;
+    head.id = 2;
+    head.name = "Head";
+    head.parentPartId = body.id;
+
+    REQUIRE_FALSE(body.parentPartId.has_value());
+    REQUIRE(head.parentPartId.has_value());
+    REQUIRE(head.parentPartId.value() == body.id);
+}

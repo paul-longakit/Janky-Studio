@@ -188,6 +188,30 @@ src/brush.cpp.s:
 	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f painting/CMakeFiles/janky_studio_painting.dir/build.make painting/CMakeFiles/janky_studio_painting.dir/src/brush.cpp.s
 .PHONY : src/brush.cpp.s
 
+src/creature_part_converter.o: src/creature_part_converter.cpp.o
+.PHONY : src/creature_part_converter.o
+
+# target to build an object file
+src/creature_part_converter.cpp.o:
+	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f painting/CMakeFiles/janky_studio_painting.dir/build.make painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o
+.PHONY : src/creature_part_converter.cpp.o
+
+src/creature_part_converter.i: src/creature_part_converter.cpp.i
+.PHONY : src/creature_part_converter.i
+
+# target to preprocess a source file
+src/creature_part_converter.cpp.i:
+	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f painting/CMakeFiles/janky_studio_painting.dir/build.make painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.i
+.PHONY : src/creature_part_converter.cpp.i
+
+src/creature_part_converter.s: src/creature_part_converter.cpp.s
+.PHONY : src/creature_part_converter.s
+
+# target to generate assembly for a file
+src/creature_part_converter.cpp.s:
+	cd "/home/paulus/Desktop/Janky Studio/build" && $(MAKE) $(MAKESILENT) -f painting/CMakeFiles/janky_studio_painting.dir/build.make painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.s
+.PHONY : src/creature_part_converter.cpp.s
+
 src/paint_document.o: src/paint_document.cpp.o
 .PHONY : src/paint_document.o
 
@@ -276,6 +300,9 @@ help:
 	@echo "... src/brush.o"
 	@echo "... src/brush.i"
 	@echo "... src/brush.s"
+	@echo "... src/creature_part_converter.o"
+	@echo "... src/creature_part_converter.i"
+	@echo "... src/creature_part_converter.s"
 	@echo "... src/paint_document.o"
 	@echo "... src/paint_document.i"
 	@echo "... src/paint_document.s"

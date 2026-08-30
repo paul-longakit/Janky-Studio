@@ -90,6 +90,12 @@
   "output": "painting/CMakeFiles/janky_studio_painting.dir/src/animation_frame_converter.cpp.o"
 },
 {
+  "directory": "/home/paulus/Desktop/Janky Studio/build/painting",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -std=c++23 -o CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o -c \"/home/paulus/Desktop/Janky Studio/painting/src/creature_part_converter.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/painting/src/creature_part_converter.cpp",
+  "output": "painting/CMakeFiles/janky_studio_painting.dir/src/creature_part_converter.cpp.o"
+},
+{
   "directory": "/home/paulus/Desktop/Janky Studio/build/ui",
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I\"/home/paulus/Desktop/Janky Studio/ui/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -isystem \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/include\" -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -std=c++23 -fPIC -o CMakeFiles/janky_studio_ui.dir/janky_studio_ui_autogen/mocs_compilation.cpp.o -c \"/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/mocs_compilation.cpp\"",
   "file": "/home/paulus/Desktop/Janky Studio/build/ui/janky_studio_ui_autogen/mocs_compilation.cpp",
@@ -172,5 +178,11 @@
   "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/painting/animation_frame_converter_tests.cpp\"",
   "file": "/home/paulus/Desktop/Janky Studio/tests/painting/animation_frame_converter_tests.cpp",
   "output": "tests/CMakeFiles/janky_studio_tests.dir/painting/animation_frame_converter_tests.cpp.o"
+},
+{
+  "directory": "/home/paulus/Desktop/Janky Studio/build/tests",
+  "command": "/usr/bin/c++  -I\"/home/paulus/Desktop/Janky Studio/statemachine/include\" -I\"/home/paulus/Desktop/Janky Studio/domain/include\" -I\"/home/paulus/Desktop/Janky Studio/core/include\" -I\"/home/paulus/Desktop/Janky Studio/painting/include\" -std=c++23 -o CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o -c \"/home/paulus/Desktop/Janky Studio/tests/painting/creature_part_converter_tests.cpp\"",
+  "file": "/home/paulus/Desktop/Janky Studio/tests/painting/creature_part_converter_tests.cpp",
+  "output": "tests/CMakeFiles/janky_studio_tests.dir/painting/creature_part_converter_tests.cpp.o"
 }
 ]
